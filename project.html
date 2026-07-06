@@ -1,15 +1,15 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>项目 - 全视之眼</title>
-    <meta name="description" content="全视之眼 的个人网站。">
+    <title>项目 - 周氏物语</title>
+    <meta name="description" content="周氏物语 的个人网站。">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="masthead">
-      <h2><a href="index.html">全视之眼</a></h2>
+      <h2><a href="index.html">周氏物语</a></h2>
 
       <nav class="menu" aria-label="主导航">
         <input id="menu-check" type="checkbox" hidden>
@@ -20,6 +20,7 @@
         </label>
         <ul>
           <li><a href="index.html">首页</a></li>
+          <li class="active"><a href="project.html">项目</a></li>
           <li><a href="preface.html">前言</a></li>
           <li><a href="catalog.html">目录</a></li>
           <li><a href="tags.html">标签</a></li>
@@ -35,9 +36,21 @@
         <hr>
       </header>
 
-      <p>这里是“项目”这一页。</p>
+      <h3><a href="https://github.com/zcycharls/naonao" target="_blank" rel="noopener">孬孬Naonao</a></h3>
 
-      <p>把这一页的占位文字替换成你的正文即可。页面结构、左侧导航、字体、边框和页脚都会保持和首页一致。</p>
+      <p>孬孬是一个 Windows 桌面专注陪伴工具。它把一只小树袋熊放在屏幕角落，用比较轻的方式提醒你回到当前任务，而不是再塞给你一个复杂的待办清单。项目入口是 <a href="https://naonao.help" target="_blank" rel="noopener">naonao.help</a>。</p>
+
+      <p>它主要面向容易走神、需要外部锚点的人，尤其适合 ADHD 朋友使用。孬孬支持番茄钟、任务锚、定时签到、一起专注、想法冰箱、专注数据统计和飞书监督：走神的时候，它负责把你拉回来；突然冒出的想法，可以先放进“冰箱”，等当前任务结束后再处理。</p>
+
+      <p>技术上，孬孬是一个开源的 Windows 桌面应用，采用 MIT 许可证。它可以接入云端 AI，也可以按需使用本地模型；不要求注册账号，不做遥测，API Key 保存在本机。这个项目的目标不是制造压力，而是用一个更温和的桌面伙伴，帮人把注意力留在眼前的一件事上。</p>
+
+      <h3><a href="https://github.com/zcycharls/real-mirror" target="_blank" rel="noopener">真实之镜 Real Mirror</a></h3>
+
+      <p>真实之镜是一个 Android “真实镜子”应用。它会打开手机前置摄像头做实时预览，并把前置摄像头默认的镜像显示再水平翻转一次，让屏幕里看到的自己更接近别人眼中的方向。</p>
+
+      <p>这个应用用 Kotlin、Jetpack Compose 和 CameraX 实现。核心做法不是逐帧处理图像，而是在预览层对 CameraX 的 PreviewView 做水平翻转，所以预览延迟基本保持为系统相机预览的延迟。应用只声明并请求相机权限。</p>
+
+      <p>可以直接下载测试版 APK：<a href="https://github.com/zcycharls/real-mirror/raw/main/dist/real-mirror-debug.apk" target="_blank" rel="noopener">real-mirror.apk</a>。这是测试签名包，适合手机测试；安装时如果系统提示“未知来源应用”，需要允许当前浏览器或文件管理器安装 APK。</p>
 
       <nav class="post-nav" aria-label="文章导航">
         <span class="nav-prev"><a href="catalog.html">目录</a></span>
